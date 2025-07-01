@@ -13,5 +13,5 @@
     "cloudinary": "^2.7.0",
     "express": "^5.1.0"
   },
-  "proxy":"http://localhost:5174",
+  "proxy":"http://localhost:5174"
 }
