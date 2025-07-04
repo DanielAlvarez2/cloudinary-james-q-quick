@@ -47,7 +47,8 @@ export default function Upload(){
                         type='submit'>
                     Upload    
                 </button>
-            </form>
+            </form><br/><br/>
+            
             {previewSource && (
                 <img    src={previewSource} 
                         alt='Image Preview' 

@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
+import {Link, Outlet} from 'react-router-dom'
 import Upload from './Upload.jsx'
+import Gallery from './Gallery.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
     <>
-      <Upload />
+      <div style={{display:'flex',justifyContent:'space-between'}}>
+        <h2>Cloudinary Demo</h2>
+        <span style={{display:'flex',gap:'50px'}}>
+          <h3><Link to='/gallery'>Gallery</Link></h3>
+          <h3><Link to='/upload'>Upload</Link></h3>
+        </span>
+      </div>
+        <Outlet />
+
     </>
   )
 }
-
-export default App
